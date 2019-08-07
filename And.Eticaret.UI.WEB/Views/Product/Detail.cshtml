@@ -1,0 +1,20 @@
+﻿@model And.Eticaret.Core.Model.Entity.Product
+@{
+    ViewBag.Title = "Ürün Detayı";
+}
+<h2>Ürtün Detayı</h2>
+<div class="productBox">
+    <p class="title">@Model.Name </p>
+    <img src="@Model.ImageUrl" />
+    <p>
+        @Model.Brand
+    </p>
+    <p>
+        @Model.Price.ToString("##,## ₺")
+    </p>
+    <p>
+        @Model.Description
+    </p>
+    <a href="#" class="btn btn-default"><i class="fas fa-shopping-basket"></i> Sepete At</a>
+</div>
+

@@ -1,0 +1,106 @@
+﻿@model And.Eticaret.Core.Model.Entity.Order
+
+@{
+    ViewBag.Title = "CreateOrder";
+}
+
+<h2>CreateOrder</h2>
+
+<div>
+    <h4>Order</h4>
+    <hr />
+    <dl class="dl-horizontal">
+        <dt>
+            @Html.DisplayNameFor(model => model.Status.Name)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.Status.Name)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.User.Name)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.User.Name)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.UserAddress.Title)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.UserAddress.Title)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.TotalProductPrice)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.TotalProductPrice)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.TotalTaxPrice)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.TotalTaxPrice)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.TotalDiscount)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.TotalDiscount)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.TotalPrice)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.TotalPrice)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.CreateDate)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.CreateDate)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.CreateUserID)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.CreateUserID)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.UpdateDate)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.UpdateDate)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.UpdateUserID)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.UpdateUserID)
+        </dd>
+
+    </dl>
+</div>
+<p>
+    @Html.ActionLink("Edit", "Edit", new { id = Model.ID }) |
+    @Html.ActionLink("Back to List", "Index")
+</p>
